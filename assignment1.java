@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double distance = 0,time=0,speed=0,g = 9.8;
+        Scanner t = new Scanner(System.in);
+        time = t.nextDouble();
+        speed = g * time;
+        distance = 0.5*g * time * time;
+        System.out.println("The speed of the object at " +time+" seconds after its release is" +speed+" and the distance the object has travelled in the " +time+ " seconds after the relase is " +distance);
+    }
+}
